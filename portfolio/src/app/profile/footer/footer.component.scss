@@ -1,0 +1,16 @@
+$color_1: rgb(255, 255, 255);
+$background-color_1: #1d1d1d;
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $background-color_1;
+	color: $color_1;
+	text-align: center;
+	vertical-align: middle;
+	p {
+		margin: 10px 0px;
+	}
+}
