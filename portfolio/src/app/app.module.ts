@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './profile/about/about.component';
-import { HeaderComponent } from './profile/header/header.component';
-import { HomeComponent } from './profile/home/home.component';
-import { ProjectsComponent } from './profile/projects/projects.component';
-import { SkillsComponent } from './profile/skills/skills.component';
-import { ContactComponent } from './profile/contact/contact.component';
-import { FooterComponent } from './profile/footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './profile/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

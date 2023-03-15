@@ -1,0 +1,42 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid text-uppercase">
+      <a class="navbar-brand" (click)="goToPart('home')"><i class="bi bi-house mx-2"></i>home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" (click)="goToPart('about')"
+              ><i class="bi bi-person mx-2"></i>about me</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills"
+              ><i class="bi bi-briefcase mx-2"></i>skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"
+              ><i class="bi bi-book mx-2"></i>projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"
+              ><i class="bi bi-envelope mx-2"></i>contact me</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
