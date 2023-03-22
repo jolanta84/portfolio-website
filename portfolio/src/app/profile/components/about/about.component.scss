@@ -1,0 +1,38 @@
+.row p{
+  font-weight: 700px;
+  color:black;
+
+}
+.card-body ul{
+  padding-left: 20px;
+}
+
+li{
+  padding-top: 5px;
+
+}
+.card {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-body {
+  min-height: 190px;
+}
+
+
+.card img {
+
+  border-radius: 50%;
+
+  width: 50%;
+
+  border: 1.4rem solid transparent;
+
+    }

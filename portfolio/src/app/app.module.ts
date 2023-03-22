@@ -4,28 +4,49 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './profile/components/about/about.component';
+import { HeaderComponent } from './profile/components/header/header.component';
+import { HomeComponent } from './profile/components/home/home.component';
+import { ProjectsComponent } from './profile/components/projects/projects.component';
+import { SkillsComponent } from './profile/components/skills/skills.component';
+import { ContactComponent } from './profile/components/contact/contact.component';
+import { FooterComponent } from './profile/components/footer/footer.component';
+
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileModule } from './profile/profile.module';
+
+
+
+
+
+const routes: Routes = [{path:'',
+component: ProfileComponent}
+
+
+];
+
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+};
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    HeaderComponent,
-    HomeComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    ContactComponent,
-    FooterComponent
+    
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(routes, routerOptions),
+ProfileModule,
+    HttpClientModule,
+
     FontAwesomeModule
   ],
   providers: [],

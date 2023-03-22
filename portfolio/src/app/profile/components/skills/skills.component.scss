@@ -1,0 +1,47 @@
+.card-container{
+	position: relative;
+	width: 18em;
+	perspective: 200rem;
+	height: 18em;
+
+
+}
+
+
+
+
+
+.card{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all 0.9s;
+	backface-visibility: hidden;
+
+
+  }
+
+
+
+
+
+  .card-container:hover .card-front{
+    transform: rotateY(180deg);
+  }
+
+  .card-container:hover .card-back{
+    transform: rotateY(0deg);
+  }
+
+.card-back {
+  transform: rotateY(180deg);
+	position: relative;
+}
+
+.card p{
+	position: absolute;
+	top:50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+
+}
