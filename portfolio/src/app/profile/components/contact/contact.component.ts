@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/_services/profile.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  buttons: any;
 
+  constructor(private profileService: ProfileService) {}
+  ngOnInit(): void {
+    this.buttons = this.profileService.getButtons();
+  }
 }

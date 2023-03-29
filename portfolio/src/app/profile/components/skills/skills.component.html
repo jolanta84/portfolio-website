@@ -1,34 +1,21 @@
 <section id="skills">
-<div class="container">
-
-  <div class="h4 text-center mb-4 title">Skills</div>
-  <div class="row">
-
-
-
-  <div  class=" col-lg-4 col-md-6 col-sm-12 "*ngFor="let skill of skills">
-  <div class="card-container mx-auto mt-5" >
-    <div class="card card-front">
-      <img
-        class="card-img"
-        src={{skill.imgUrl}}
-        alt="Card image cap"
-      />
+  <div class="container pt-5">
+    <div class="text-center mb-4 title"><h2>Skills</h2></div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let skill of skills">
+        <div class="card-container mx-auto mt-5">
+          <div class="card card-front">
+            <img
+              class="card-img"
+              src="{{ skill.imgUrl }}"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card card-back d-none d-lg-block">
+            <p>{{ skill.name }}</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card card-back d-none d-lg-block ">
-      <p>{{skill.name}}</p>
-    </div>
-  </div></div>
-
-
-
-
-</div>
-
-</div>
-
-
-
-
-
+  </div>
 </section>

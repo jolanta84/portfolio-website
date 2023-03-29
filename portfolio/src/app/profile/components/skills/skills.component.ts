@@ -4,15 +4,13 @@ import { ProfileService } from 'src/app/_services/profile.service';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent implements OnInit{
-  skills:any
+export class SkillsComponent implements OnInit {
+  skills: any;
 
-  constructor(private profileService:ProfileService){}
-    ngOnInit(): void {
-this.skills = this.profileService.skills()
-    }
-
-
+  constructor(private profileService: ProfileService) {}
+  ngOnInit(): void {
+    this.skills = this.profileService.getSkills();
+  }
 }

@@ -1,4 +1,15 @@
 <section id="contact">
-  <h2>contact</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, a commodi! Maxime sint, minima illo tenetur nobis, aperiam voluptate deserunt impedit voluptas architecto fugiat ipsa dolorum nisi consequatur. Aut, optio!20</p>
+  <div class="container text-center">
+    <h2>Contact Me</h2>
+    <div class="div-btn text-center d-inline" *ngFor="let button of buttons">
+      <a
+        class="btn btn-dark btn-lg me-2"
+        href="{{ button.href }}"
+        target="_blank"
+        role="button"
+      >
+        <i class="btn-icon {{ button.icon }}"></i><span class="d-none d-sm-inline ms-2">{{ button.name }}</span>
+      </a>
+    </div>
+  </div>
 </section>
